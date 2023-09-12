@@ -19,8 +19,14 @@
             font-size: 18px;
             font-weight: 500;
             padding-right: 50px;
+            display: flex;
+            align-items: center;
             &:last-child {
                 padding-right: 0;
+            }
+            &-arrowdown {
+                margin-left: 6px;
+                height: 7px;
             }
         }
     }
