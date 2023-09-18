@@ -1,9 +1,12 @@
 import { Home } from './pages/Home'
 import './styles/index.scss'
+import { TodoProvider } from './context';
 
 function App() {
   return (
-    <Home />
+    <TodoProvider>
+      <Home />
+    </TodoProvider>
   );
 }
 

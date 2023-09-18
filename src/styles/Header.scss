@@ -6,6 +6,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &__hamburger {
+        display: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
     &__logo {
         height: 30px;
         // border: 1px solid green;
@@ -42,6 +48,99 @@
             border: 2px solid black;
             border-radius: 40px;
             padding: 5px 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 834px) {
+    .header {
+        // display: grid;
+        height: 80px;
+        // border: 1px solid red;
+        &__hamburger {
+            display: block;
+            height: 30px;
+            // border: 1px solid red;
+            z-index: 999;
+            &-img {
+                // border: 1px solid red;
+                height: 30px;
+            }
+        }
+        &__ul-li {
+            // border: 1px solid red;
+            padding-left: 35%;
+            margin-top: 30px;
+            font-size: 1.5em;
+
+        }
+    }
+
+    .menu {
+        position: fixed;
+        background-color: $white;
+        top: -20px;
+        bottom: -20px;
+        width: 70%;
+        left: -300vw;
+        justify-content: center;
+        flex-direction: column;
+        transition: .3s;
+        box-shadow: 158px 0px 100px 200px rgba(32,35,41,0.8);
+    }
+
+    .menu.is-active{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        height: 80px;
+        &__searchCart {
+            // border: 1px solid red;
+            &-img {
+                height: 30px;
+                margin-right: 15px;
+            }
+            &-label {
+                font-size: .8em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        height: 80px;
+        // border: 1px solid red;
+        &__hamburger {
+            height: 20px;
+            &-img {
+                // border: 1px solid red;
+                height: 20px;
+            }
+        }
+        &__logo {
+            height: 25px;
+            // border: 1px solid green;
+        }
+    }
+    .announcementBar__p {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header {
+        height: 80px;
+        &__searchCart {
+            // border: 1px solid red;
+            &-img {
+                height: 30px;
+                margin-right: 5px;
+            }
         }
     }
 }
