@@ -17,5 +17,15 @@
         height: 500px;
         width: auto;
         background: $purpleContainer;
+        &--tag {
+            background: $blue;
+            border-radius: 0px 50px 50px 0px;
+            color: $white;
+            font-size: 25px;
+            padding: 5px 20px 5px;
+            position: relative;
+            left: 0;
+            top: 80%;
+        }
     }
 }

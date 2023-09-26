@@ -1,5 +1,6 @@
 import { CollectionsGridContainer } from "../components/CollectionsGridContainer";
 import { CollectionsContainer } from "../components/CollectionsContainer";
+// import { CollectionTag } from "../components/CollectionsTag";
 
 function Collections () {
     return (
