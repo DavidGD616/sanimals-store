@@ -30,3 +30,45 @@
         }
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .collections {
+        &__h2 {
+            font-size: 28px;
+        }
+        &__gridContainer {
+            gap: 50px;
+        }
+        &__collectionContainer {
+            height: 400px;
+            &--tag {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .collections {
+        &__h2 {
+            font-size: 24px;
+        }
+        &__gridContainer {
+            gap: 30px;
+        }
+        &__collectionContainer {
+            height: 300px;
+            &--tag {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .collections {
+        &__gridContainer {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
