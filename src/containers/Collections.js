@@ -1,6 +1,6 @@
 import { CollectionsGridContainer } from "../components/CollectionsGridContainer";
 import { CollectionsContainer } from "../components/CollectionsContainer";
-// import { CollectionTag } from "../components/CollectionsTag";
+import ArrowUp from '../svg/carbon_arrow-up-right.svg';
 
 function Collections () {
     return (
@@ -12,6 +12,12 @@ function Collections () {
                 <CollectionsContainer />
                 <CollectionsContainer />
                 <CollectionsContainer />
+                <div className="collections__ButtonCategories">
+                    <span>
+                        ALL CATEGORIES
+                        <img src={ArrowUp}/>
+                    </span>
+                </div>
             </CollectionsGridContainer>
         </section>
     )
