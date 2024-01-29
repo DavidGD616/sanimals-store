@@ -13,9 +13,13 @@ function Collections () {
                 <CollectionsContainer />
                 <CollectionsContainer />
                 <div className="collections__ButtonCategories">
-                    <span>
+                    {/* <button>
                         ALL CATEGORIES
                         <img src={ArrowUp}/>
+                    </button> */}
+                    <span>
+                        ALL CATEGORIES
+                        <img src={ArrowUp} alt={ArrowUp}/>
                     </span>
                 </div>
             </CollectionsGridContainer>
