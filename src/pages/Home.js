@@ -3,6 +3,7 @@ import { Header } from '../containers/Header';
 import { PageWidth } from '../components/PageWidth';
 import { Banner } from '../containers/Banner';
 import { Collections } from '../containers/Collections';
+import { Footer } from '../containers/Footer';
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
         <PageWidth>
             <Collections />
         </PageWidth>
+        <Footer />
         </>
     )
 }

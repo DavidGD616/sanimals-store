@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+.footer {
+    background: $footerBackground;
+    padding: 0 90px;
+    &__topSection {
+        display: flex;
+        justify-content: space-between;
+        &-logoEmail {
+            border: 1px solid green;
+            & img {
+                height: 100px;
+            }
+            & form {
+                & input {
+                    border: 2px solid $footerColor2;
+                    border-radius: 30px;
+                    background: $footerBackground;
+                    padding: 10px 90px 10px 10px;
+                }
+                & p {
+                    color: $footerColor2;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        &-SCT {
+            border: 1px solid red;
+            display: flex;
+        }
+    }
+}
