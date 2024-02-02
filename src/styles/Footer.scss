@@ -65,5 +65,42 @@
             }
         }
     }
+    &__bottomSection {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        &-Copy {
+            & label {
+                color: $footerColor2;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+        &-Payments {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            & label {
+                color: $white;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0.02em;
+            }
+            & ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                & li {
+                    margin-right: 1.6em;
+                }
+                & li:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }
 
