@@ -4,14 +4,16 @@
     background: $footerBackground;
     padding: 0 90px;
     &__topSection {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        flex-wrap: wrap;
+        padding: 3rem 0;
         &-logoEmail {
-            border: 1px solid green;
             & img {
                 height: 100px;
             }
             & form {
+                margin-left: 20px;
                 & input {
                     border: 2px solid $footerColor2;
                     border-radius: 30px;
@@ -26,8 +28,42 @@
             }
         }
         &-SCT {
-            border: 1px solid red;
             display: flex;
+            justify-content: space-between;
+            & h3 {
+                color: $white;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 33px;
+            }
+            & ul {
+                list-style: none;
+                padding-left: 0;
+            }
+            & ul li {
+                color: $footerColor;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                padding-bottom: 10px;
+            }
+        }
+        &-socialMedia {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & label {
+                color: $footerColor2;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                border: 2px solid $footerColor2;
+                border-radius: 30px;
+                padding: 10px 60px;
+                margin-top: 30px;
+            }
         }
     }
 }
+

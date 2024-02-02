@@ -45,7 +45,7 @@ function Footer() {
                 </div>
                 <div className='footer__topSection-socialMedia'>
                     <label className='socialMedia'>INSTAGRAM</label>
-                    <label className='socialMedia'>FACEBOOK</label>
+                    <label className='socialMedia'>FACEBOOK </label>
                 </div>
             </div>
         </footer>
