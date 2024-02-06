@@ -4,8 +4,8 @@
     background: $footerBackground;
     padding: 0 90px;
     &__topSection {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         padding: 3rem 0;
         &-logoEmail {
@@ -35,6 +35,10 @@
                 font-size: 22px;
                 font-weight: 600;
                 line-height: 33px;
+                margin-right: 100px;
+            }
+            & h3:last-child {
+                margin-right: 0;
             }
             & ul {
                 list-style: none;
@@ -98,6 +102,71 @@
                 }
                 & li:last-child {
                     margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (width < 1300px) {
+    .footer {
+        padding: 0 3em;
+        border: 1px solid red;
+        &__topSection {
+            &-logoEmail {
+                & img {
+                    height: 80px;
+                }
+                & form {
+                    margin-left: 10px;
+                    & input {
+                        font-size: 12px;
+                        letter-spacing: 0.02em;
+                        line-height: 15px;
+                        padding: 10px 70px 10px 10px;
+                    }
+                    & p {
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+            &-SCT {
+                & h3 {
+                    font-size: 18px;
+                    margin-right: 60px;
+                }
+                & ul li {
+                    font-size: 14px;
+                }
+            }
+            &-socialMedia {
+                & label {
+                    font-size: 14px;
+                    padding: 5px 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (width < 950px) {
+    .footer {
+        padding: 0 1em;
+    }
+}
+
+@media (width < 850px){
+    .footer {
+        padding: 0 .5em;
+        &__topSection {
+            flex-direction: column;
+            align-items: center;
+            &-SCT {
+                flex-direction: column;
+                & ul {
+                    visibility: collapse;
                 }
             }
         }
