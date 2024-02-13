@@ -111,7 +111,6 @@
 @media (width < 1300px) {
     .footer {
         padding: 0 3em;
-        border: 1px solid red;
         &__topSection {
             &-logoEmail {
                 & img {
@@ -148,12 +147,36 @@
                 }
             }
         }
+        &__bottomSection {
+            &-Copy {
+                & label {
+                    font-size: 14px;
+                }
+            }
+            &-Payments {
+                & label {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }
 
 @media (width < 950px) {
     .footer {
         padding: 0 1em;
+        &__bottomSection {
+            &-Copy {
+                & label {
+                    font-size: 12px;
+                }
+            }
+            &-Payments {
+                & label {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
 
@@ -165,8 +188,21 @@
             align-items: center;
             &-SCT {
                 flex-direction: column;
+                & h3 {
+                    margin-right: 0;
+                }
                 & ul {
-                    visibility: collapse;
+                    display: none;
+                }
+            }
+        }
+        &__bottomSection {
+            flex-direction: column-reverse;
+            padding-bottom: 20px;
+            &-Payments {
+                flex-direction: column;
+                & ul li:last-child {
+                    margin-right: 1.6em;
                 }
             }
         }
