@@ -3,6 +3,7 @@ import React from 'react';
 const TodoContext = React.createContext();
 
 function TodoProvider({ children }) {
+    // Hamburger Button
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const toggleMenu = () => {

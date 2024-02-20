@@ -37,6 +37,14 @@
             }
         }
     }
+    & ul li:hover > ul,
+    ul li:focus-within > ul,
+    ul li ul:hover,
+    ul li ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
     &__searchCart {
         // border: 1px solid green;
         display: flex;
