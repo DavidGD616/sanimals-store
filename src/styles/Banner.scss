@@ -32,8 +32,8 @@
         }
         &-button {
             font-family: "Poppins", sans-serif;
-            height: 40px;
-            width: 150px;
+            height: 50px;
+            width: 180px;
             border-radius: 40px;
             border: 2px solid var(--LightBlue, #56D1DC);
             background: var(--LightBlue, #56D1DC);
@@ -42,6 +42,9 @@
             color: $white;
             font-weight: 800;
             letter-spacing: 0.4px;
+            & svg {
+                height: 22px;
+            }
         }
     }
     &__image {
@@ -75,6 +78,9 @@
             }
             &-button {
                 font-size: 1.1em;
+                & svg {
+                    height: 1.1em;
+                }
             }
         }
     }
@@ -93,9 +99,12 @@
             }
             &-button {
                 font-size: 1em;
-                height: 2.3em;
-                width: 7.5em;
+                height: 40px;
+                width: 150px;
                 // z-index: -1;
+                & svg {
+                    height: 1em;
+                }
             }
         }
     }
