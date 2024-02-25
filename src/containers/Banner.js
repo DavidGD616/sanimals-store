@@ -1,5 +1,5 @@
-import { BannerContent } from '../components/BannerContent';
-import { BannerImage } from '../components/BannerImage';
+import { BannerContent } from '../components/Home/BannerContent';
+import { BannerImage } from '../components/Home/BannerImage';
 
 
 function Banner () {

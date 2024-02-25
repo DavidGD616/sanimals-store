@@ -14,6 +14,7 @@
     }
     &__logo {
         height: 30px;
+        cursor: pointer;
         // border: 1px solid green;
     }
     &__ul {
@@ -23,6 +24,7 @@
         // border: 1px solid green;
         &-li {
             font-family: "Commissioner", sans-serif;
+            cursor: pointer;
             font-size: 18px;
             font-weight: 500;
             padding-right: 50px;
@@ -47,6 +49,7 @@
     }
     &__searchCart {
         // border: 1px solid green;
+        cursor: pointer;
         display: flex;
         align-items: center;
         &-img {
@@ -54,6 +57,7 @@
             margin-right: 30px;
         }
         &-label {
+            cursor: pointer;
             font-family: "Mulish", sans-serif;
             border: 2px solid black;
             border-radius: 40px;
@@ -125,17 +129,14 @@
 @media screen and (max-width: 420px) {
     .header {
         height: 90px;
-        // border: 1px solid red;
         &__hamburger {
             height: 20px;
             &-img {
-                // border: 1px solid red;
                 height: 20px;
             }
         }
         &__logo {
             height: 25px;
-            // border: 1px solid green;
         }
     }
     .announcementBar__p {

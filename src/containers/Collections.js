@@ -1,5 +1,5 @@
-import { CollectionsGridContainer } from "../components/CollectionsGridContainer";
-import { CollectionsContainer } from "../components/CollectionsContainer";
+import { CollectionsGridContainer } from "../components/Home/CollectionsGridContainer";
+import { CollectionsContainer } from "../components/Home/CollectionsContainer";
 import ArrowUp from '../svg/carbon_arrow-up-right.svg';
 
 function Collections () {

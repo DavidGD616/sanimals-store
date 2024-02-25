@@ -12,17 +12,11 @@ function Menu() {
         <ul className={`header__ul menu ${isMenuOpen ? 'is-active' : ''}`}>
             <li className="header__ul-li">
                 New in
-                <img className='header__ul-li-arrowdown' src={ArrowDown} alt='ArrowDown' />
             </li>
             <li className="header__ul-li">
-                Accesories
-                <DropdownMenu />
-                <img className='header__ul-li-arrowdown' src={ArrowDown} alt='ArrowDown' />
-                </li>
-            <li className="header__ul-li">
                 Collections
-                <DropdownMenu />
                 <img className='header__ul-li-arrowdown' src={ArrowDown} alt='ArrowDown' />
+                <DropdownMenu />
                 </li>
         </ul>
     )

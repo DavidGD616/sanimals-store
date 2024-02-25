@@ -15,3 +15,11 @@
         margin: 20px 0;
     }
 }
+
+@media (width < 834px) {
+    .dropdown {
+        position: relative;
+        top: 120px;
+        left: -140px;
+    }
+}

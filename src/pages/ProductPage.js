@@ -1,24 +1,20 @@
 import { Announcement } from '../components/Announcement';
 import { Header } from '../containers/Header';
 import { PageWidth } from '../components/PageWidth';
-import { Banner } from '../containers/Banner';
-import { Collections } from '../containers/Collections';
 import { Footer } from '../containers/Footer';
+import { ProductSection } from '../containers/ProductSection';
 
-function Home() {
+function ProductPage() {
     return (
         <>
         <Announcement />
             <PageWidth>
                 <Header />
-            </PageWidth>
-        <Banner />
-            <PageWidth>
-                <Collections />
+                <ProductSection />
             </PageWidth>
         <Footer />
         </>
     )
 }
 
-export { Home };
+export { ProductPage };

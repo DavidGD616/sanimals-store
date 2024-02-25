@@ -10,6 +10,7 @@
         padding: 3rem 0;
         &-logoEmail {
             & img {
+                cursor: pointer;
                 height: 100px;
             }
             & form {
@@ -45,6 +46,7 @@
                 padding-left: 0;
             }
             & ul li {
+                cursor: pointer;
                 color: $footerColor;
                 font-size: 16px;
                 font-weight: 600;
@@ -58,6 +60,7 @@
             justify-content: center;
             align-items: center;
             & label {
+                cursor: pointer;
                 color: $footerColor2;
                 font-size: 16px;
                 font-weight: 600;

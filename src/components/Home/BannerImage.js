@@ -1,4 +1,4 @@
-import BannerFriends from '../svg/bannerFriends.png'
+import BannerFriends from '../../svg/bannerFriends.png'
 
 function BannerImage () {
     return (
