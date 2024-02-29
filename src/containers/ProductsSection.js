@@ -20,7 +20,7 @@ function ProductsSection({ products }) {
                             width="100%"
                             alt={product.title}
                             className="w-full object-contain h-[200px]"
-                            src={product.image}
+                            src={product.images[0]}
                         />
                     </CardBody>
                     <CardFooter className="h-24 text-small justify-between

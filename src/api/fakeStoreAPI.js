@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://fakestoreapi.com';
+const BASE_URL = 'https://api.escuelajs.co/api/v1';
 
 
 // Products
