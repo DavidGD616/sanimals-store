@@ -4,9 +4,14 @@ const BASE_URL = 'https://api.escuelajs.co/api/v1';
 
 
 // Products
-export const fetchProducts = async () => {
+export const fetchProducts = async (offset, limit) => {
     try {
-      const response = await axios.get(`${BASE_URL}/products`);
+      const response = await axios.get(`${BASE_URL}/products`, {
+        params: {
+          offset: offset,
+          limit: limit
+        }
+      });
       return response.data;
     } catch (error) {
       console.error('Error fetching products: ', error);
