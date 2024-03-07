@@ -43,7 +43,7 @@ function Products() {
                 {products && products.length > 0 ? (
                     <>
                     <ProductsSection products={currentProducts} />
-                    <div className='flex w-full justify-center'>
+                    <div className='flex w-full justify-center mb-10'>
                         <Pagination
                             variant='flat'
                             color='primary'
@@ -51,7 +51,7 @@ function Products() {
                             radius='md'
                             total={totalPages}
                             siblings={0}
-                            boundaries={4}
+                            boundaries={2}
                             initialPage={1}
                             showControls
                             page={currentPage}
