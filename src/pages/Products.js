@@ -6,6 +6,7 @@ import { PageWidth } from '../components/PageWidth';
 import { Footer } from '../containers/Footer';
 import { ProductsSection } from '../containers/ProductsSection';
 import { Pagination } from '@nextui-org/react';
+import { SkeletonProduct } from '../components/Skeletons';
 
 function Products() {
     const productsPerPage = 8;
@@ -16,7 +17,6 @@ function Products() {
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
-
     useEffect(() => {
         async function fetchData() {
             try {
@@ -30,8 +30,9 @@ function Products() {
             }
         }
         fetchData();
-    }, [currentPage, products]);
+    }, []);
 
+    const skeletonArray = new Array(8).fill(<SkeletonProduct />);
 
 
 
@@ -40,6 +41,7 @@ function Products() {
         <Announcement />
             <PageWidth>
                 <Header />
+                <h1 className="text-4xl font-bold text-center my-12">All Products</h1>
                 {products && products.length > 0 ? (
                     <>
                     <ProductsSection products={currentProducts} />
@@ -61,7 +63,16 @@ function Products() {
                     </div>
                     </>
                 ) : (
-                    <p>Loading...</p>
+                    <>
+                    <div className='mt-10 grid grid-cols-2 gap-6 lg:mt-16 lg:grid-cols-4 lg:gap-4'>
+                        {skeletonArray.map((skeleton, index) => (
+                            <React.Fragment key={index}>
+                                {skeleton}
+                            </React.Fragment>
+                        ))}
+                    </div>
+                    </>
+                    
                 )}
             </PageWidth>
         <Footer />

@@ -4,7 +4,7 @@ import { Announcement } from '../components/Announcement';
 import { Header } from '../containers/Header';
 import { PageWidth } from '../components/PageWidth';
 import { Banner } from '../containers/Banner';
-import { CategoriesSection } from '../containers/CategoriesSection';
+import { CategoriesSectionHome } from '../containers/CategoriesSection';
 import { Footer } from '../containers/Footer';
 
 function Home() {
@@ -35,7 +35,7 @@ function Home() {
             </PageWidth>
         <Banner />
             <PageWidth>
-                <CategoriesSection categories={categories} />
+                <CategoriesSectionHome categories={categories} />
             </PageWidth>
         <Footer />
         </>
