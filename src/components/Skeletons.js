@@ -23,7 +23,18 @@ function SkeletonProduct() {
 }
 
 function SkeletonCategorie() {
-
+    return (
+        <Card radius="sm" shadow="none" className="p-8">
+            <div className="space-y-3">
+                <Skeleton className="w-3/5 rounded-lg">
+                    <div className="h-3 w-3/5 rounded-lg bg-default-200"></div>
+                </Skeleton>
+            </div>
+            <Skeleton className="roudend-lg">
+                <div className="mt-8 flex items-center justify-center md:mt-24"></div>
+            </Skeleton>
+        </Card>
+    )
 }
 
 export { SkeletonProduct, SkeletonCategorie }

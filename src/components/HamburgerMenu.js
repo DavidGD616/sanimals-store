@@ -1,5 +1,5 @@
 import React from 'react';
-import Hamburger from '../svg/Hamburger.svg'
+import { Hamburger } from '../svg/Hamburger';
 import { TodoContext } from '../context';
 
 function HamburgerMenu () {
@@ -10,9 +10,7 @@ function HamburgerMenu () {
 
     return (              
         <button className={`header__hamburger ${isMenuOpen ? 'is-active' : ''}`}>
-            <img className='header__hamburger-img'
-            src={Hamburger} alt='Hamburger' 
-            onClick={toggleMenu}/>
+            <Hamburger className='header__hamburger-img' onClick={toggleMenu} />
         </button>
     )
 }

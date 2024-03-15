@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowDown from '../svg/ArrowDown.svg';
+import { ArrowDown } from '../svg/ArrowDown';
 import { TodoContext } from '../context';
 import { DropdownMenu } from './DropdownMenu';
 
@@ -15,7 +15,7 @@ function Menu() {
             </li>
             <li className="header__ul-li">
                 Collections
-                <img className='header__ul-li-arrowdown' src={ArrowDown} alt='ArrowDown' />
+                <ArrowDown className='header__ul-li-arrowdown' />
                 <DropdownMenu />
                 </li>
         </ul>

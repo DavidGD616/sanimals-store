@@ -1,12 +1,12 @@
 import React from 'react'
-import { Badge, Avatar } from '@nextui-org/react'
-import search from '../svg/Search.svg'
+import { Badge } from '@nextui-org/react'
 import { CartIcon } from '../svg/CartIcon'
+import { Search } from '../svg/Search'
 
 function SearchCart() {
     return (
         <div className='header__searchCart'>
-            <img className='header__searchCart-img' src={search} alt='Search' />
+            <Search size={33} height={33} width={33} className='header__searchCart-img' />
             <Badge color='danger' content={2} shape='rectangle'>
                 <CartIcon size={30}/>
             </Badge>

@@ -36,6 +36,7 @@ function CategoriesSectionHome({ categories }) {
                 Our Collections
             </h1>
             <div className="my-32 grid grid-cols-1 gap-6 md:mt-10 md:grid-cols-3 lg:gap-8">
+                {/* Show just 5 categories in total. */}
                 {categories.slice(0, 5).map((categorie, index) => (
                     <Card radius="sm" key={index} shadow="none" isPressable className="bg-[#FEEFFF] p-8">
                         <CardHeader>

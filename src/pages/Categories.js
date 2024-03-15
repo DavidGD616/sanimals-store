@@ -5,6 +5,7 @@ import { PageWidth } from "../components/PageWidth";
 import { Header } from "../containers/Header";
 import { Footer } from "../containers/Footer";
 import { CategoriesSection } from "../containers/CategoriesSection";
+import { SkeletonCategorie } from "../components/Skeletons";
 
 function Categories() {
     const [ categories, setCategories ] = useState([]);
@@ -23,7 +24,7 @@ function Categories() {
     }, []);
 
     if (!categories) {
-        return <div>Loading ...</div>
+        return <SkeletonCategorie />
     }
 
     return (
