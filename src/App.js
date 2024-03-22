@@ -1,9 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { NextUIProvider } from '@nextui-org/react';
 import './styles/index.scss';
 import './index.css';
-import { TodoProvider } from './context';
 import { Home } from './pages/Home'
 import { ProductPage } from './pages/ProductPage'; 
 import { Products } from './pages/Products';
@@ -12,8 +10,6 @@ import { Cart } from './pages/Cart';
 
 function App() {
   return (
-    <NextUIProvider>
-      <TodoProvider>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={< Home />} />
@@ -23,8 +19,6 @@ function App() {
             <Route path='/cart' element={<Cart />} />
           </Routes>
         </BrowserRouter>
-      </TodoProvider>
-    </NextUIProvider>
   );
 }
 

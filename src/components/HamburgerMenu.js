@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hamburger } from '../svg/Hamburger';
-import { TodoContext } from '../context';
+import { TodoContext } from '../context/HamburgerMenuProvider';
 
 function HamburgerMenu () {
     const { 
