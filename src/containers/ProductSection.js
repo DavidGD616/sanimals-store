@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { CartContext } from "../context/CartProvider";
 import { Link } from "react-router-dom";
 import { ColorsPicker } from "../components/ProductPage/ColorsPicker";
 import { SizesPicker } from "../components/ProductPage/SizesPicker";
-import { Button01 } from "../components/Button01";
+import { Button } from "@nextui-org/react";
+import { BagIcon } from "../svg/BagIcon";
 
 function ProductSection({ product, colors, sizes }) {
+  const {
+    addToCart,
+  } = useContext(CartContext)
+
   const images = product.images;
 
   const [mainImage, setMainImage] = useState(images[0]);
@@ -58,7 +64,15 @@ function ProductSection({ product, colors, sizes }) {
                 <span className="text-3xl font-bold text-black">${product.price}</span>
               </div>
               {/* Add to Cart Button */}
-              <Button01>Add to Cart</Button01>
+              <Button 
+              onClick={() => {
+                const result = addToCart(product)
+                console.log(result)
+              }}
+              className="inline-flex items-center justify-center rounded-md border-2 border-transparent bg-gray-900 bg-none px-12 py-6 text-center text-base font-bold text-white">
+                <BagIcon />
+                Add to Cart
+              </Button>
             </div>
 
             <div className="lg:col-span-3">
