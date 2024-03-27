@@ -65,10 +65,7 @@ function ProductSection({ product, colors, sizes }) {
               </div>
               {/* Add to Cart Button */}
               <Button 
-              onClick={() => {
-                const result = addToCart(product)
-                console.log(result)
-              }}
+              onClick={() => {addToCart(product)}}
               className="inline-flex items-center justify-center rounded-md border-2 border-transparent bg-gray-900 bg-none px-12 py-6 text-center text-base font-bold text-white">
                 <BagIcon />
                 Add to Cart
