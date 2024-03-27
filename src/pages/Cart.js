@@ -7,6 +7,7 @@ import { Footer } from "../containers/Footer";
 import { Button, Divider, Link } from "@nextui-org/react";
 import { Reducer } from "../svg/Reducer";
 import { Increaser } from "../svg/Increaser";
+import { EmptyCart } from "../svg/EmptyCart";
 
 function Cart() {
     const { 
@@ -119,7 +120,23 @@ function Cart() {
                                     </div>
                                     </>
                                 ) : (
-                                    <h1 className="text-lg font-bold">Your cart is empty</h1>
+                                    <div className="flex flex-col items-center my-8">
+                                        <div className="pb-8">
+                                            <EmptyCart size={80} />
+                                        </div>
+                                        <h3 className="text-xl font-bold py-4">
+                                            Your Cart is Empty
+                                        </h3>
+                                        <h4 className="text-lg font-medium pb-4">
+                                            Add something to make me happy :)
+                                        </h4>
+                                        <Button
+                                        radius="sm"
+                                        color="primary"
+                                        >
+                                            Continue Shopping
+                                        </Button>
+                                    </div>
                                 )
                             }
 

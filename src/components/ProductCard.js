@@ -32,8 +32,8 @@ function ProductCard({ products }) {
                         radius="md"
                         className="mt-2 flex items-center justify-center bg-slate-900 py-2.5 text-center text-sm font-medium text-white"
                         >
-                            Add to Cart
                             <BagIcon />
+                            Add to Cart
                         </Button>
                     </div>
                 </div>
