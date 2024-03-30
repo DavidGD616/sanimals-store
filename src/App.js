@@ -7,7 +7,6 @@ import { ProductPage } from './pages/ProductPage';
 import { Products } from './pages/Products';
 import { Categories } from './pages/Categories';
 import { Cart } from './pages/Cart';
-import { CartModal } from './pages/CartModal';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
             <Route path='/products/:id' element={<ProductPage />} />
             <Route path='/categories' element={<Categories />} />
             <Route path='/cart' element={<Cart />} />
-            <Route path='/cart-modal' element={<CartModal />} />
           </Routes>
         </BrowserRouter>
   );
