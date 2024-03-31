@@ -4,18 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { NextUIProvider } from '@nextui-org/react';
-import { TodoProvider } from './context/HamburgerMenuProvider';
 import { CartProvider } from './context/CartProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NextUIProvider>
-      <TodoProvider>
-        <CartProvider>
-          <App />
-        </CartProvider>
-      </TodoProvider>
+      <CartProvider>
+        <App />
+      </CartProvider>
     </NextUIProvider>
   </React.StrictMode>
 );

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchProductById } from '../api/fakeStoreAPI';
-import { Announcement } from '../components/Announcement';
-import { Header } from '../containers/Header';
 import { PageWidth } from '../components/PageWidth';
 import { Footer } from '../containers/Footer';
 import { ProductSection } from '../containers/ProductSection';
@@ -30,11 +28,9 @@ function ProductPage() {
 
     return (
         <>
-        <Announcement />
-            <PageWidth>
-                <Header />
-                <ProductSection product={product} />
-            </PageWidth>
+        <PageWidth>
+            <ProductSection product={product} />
+        </PageWidth>
         <Footer />
         </>
     )

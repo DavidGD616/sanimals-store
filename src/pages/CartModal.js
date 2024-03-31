@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Link } from "@nextui-org/react";
 import { CartContext } from "../context/CartProvider";
 import { BagIcon } from "../svg/BagIcon";
-import { Link } from "react-router-dom";
 
 function CartModal({ product }) {
     const { 
@@ -65,7 +64,7 @@ function CartModal({ product }) {
                     <div className="flex flex-col w-full">
                         <Button
                         as={Link}
-                        to={'/cart'}
+                        href="/cart"
                         radius="md"
                         className="mt-2 flex items-center justify-center bg-slate-900 py-6 text-center text-sm font-medium text-white mb-4"
                         >

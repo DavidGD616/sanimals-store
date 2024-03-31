@@ -9,8 +9,11 @@ function HamburgerMenu () {
      } = React.useContext(TodoContext)
 
     return (              
-        <button className={`header__hamburger ${isMenuOpen ? 'is-active' : ''}`}>
-            <Hamburger className='header__hamburger-img' onClick={toggleMenu} />
+        <button 
+        className={`header__hamburger ${isMenuOpen ? 'is-active' : ''}`}
+        onClick={toggleMenu}
+        >
+            <Hamburger className='header__hamburger-img'  />
         </button>
     )
 }

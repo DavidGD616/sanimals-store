@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchCategories } from "../api/fakeStoreAPI";
-import { Announcement } from "../components/Announcement";
 import { PageWidth } from "../components/PageWidth";
-import { Header } from "../containers/Header";
 import { Footer } from "../containers/Footer";
 import { CategoriesSection } from "../containers/CategoriesSection";
 import { SkeletonCategorie } from "../components/Skeletons";
@@ -29,11 +27,9 @@ function Categories() {
 
     return (
         <>
-        <Announcement />
-            <PageWidth>
-                <Header />
-                <CategoriesSection categories={categories}/>
-            </PageWidth>
+        <PageWidth>
+            <CategoriesSection categories={categories}/>
+        </PageWidth>
         <Footer />
         </>
     )

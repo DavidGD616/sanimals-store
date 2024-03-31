@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartProvider";
 import { PageWidth } from '../components/PageWidth';
-import { Header } from "../containers/Header";
-import { Announcement } from "../components/Announcement";
 import { Footer } from "../containers/Footer";
 import { Button, Divider, Link } from "@nextui-org/react";
 import { Reducer } from "../svg/Reducer";
@@ -20,9 +18,7 @@ function Cart() {
 
     return (
         <>
-            <Announcement />
             <PageWidth>
-                <Header />
                 <section>
                     <div className="mt-10 mb-6">
                         <h1 className="text-3xl md:text-4xl font-medium">Your Cart</h1>

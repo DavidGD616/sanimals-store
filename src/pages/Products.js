@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { fetchProducts } from '../api/fakeStoreAPI';
-import { Announcement } from '../components/Announcement';
-import { Header } from '../containers/Header';
 import { PageWidth } from '../components/PageWidth';
 import { Footer } from '../containers/Footer';
 import { ProductsSection } from '../containers/ProductsSection';
@@ -38,9 +36,7 @@ function Products() {
 
     return (
         <>
-        <Announcement />
             <PageWidth>
-                <Header />
                 <h1 className="text-4xl font-bold text-center my-12">All Products</h1>
                 {products && products.length > 0 ? (
                     <>

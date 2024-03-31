@@ -7,9 +7,14 @@ import { ProductPage } from './pages/ProductPage';
 import { Products } from './pages/Products';
 import { Categories } from './pages/Categories';
 import { Cart } from './pages/Cart';
+import { Announcement } from './components/Announcement';
+import { NavBarSection } from './containers/NavBarSection';
 
 function App() {
   return (
+    <>
+    <Announcement />
+    <NavBarSection />
         <BrowserRouter>
           <Routes>
             <Route path='/' element={< Home />} />
@@ -19,6 +24,7 @@ function App() {
             <Route path='/cart' element={<Cart />} />
           </Routes>
         </BrowserRouter>
+    </>
   );
 }
 
