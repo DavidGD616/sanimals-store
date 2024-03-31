@@ -13,7 +13,16 @@ function NavBarSection() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <Navbar shouldHideOnScroll className="h-[80px] sm:h-[90px] md:h-[100px] lg:h-[130px]"
+        <Navbar
+        classNames={{
+            toggleIcon: [
+                "before:h-[2px]",
+                "after:h-[2px]"
+            ]
+        }}
+        maxWidth="xl"
+        shouldHideOnScroll 
+        className="h-[80px] sm:h-[90px] md:h-[100px] lg:h-[130px]"
         onMenuOpenChange={setIsMenuOpen}>
             <NavbarContent>
                 <NavbarMenuToggle

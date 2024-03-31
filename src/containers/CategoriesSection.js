@@ -37,7 +37,7 @@ function CategoriesSectionHome({ categories }) {
                 <h1 className="my-8 text-center text-3xl font-semibold text-gray-800 lg:text-4xl">
                     Our Collections
                 </h1>
-                <div className="my-32 grid grid-cols-1 gap-6 md:mt-10 md:grid-cols-3 lg:gap-8">
+                <div className="my-12 md:my-48 grid grid-cols-2 gap-4 md:mt-10 md:grid-cols-3 lg:gap-8">
                     {/* Show just 5 categories in total. */}
                     {categories.slice(0, 5).map((categorie, index) => (
                         <Card radius="sm" key={index} shadow="none" isPressable className="bg-[#FEEFFF] p-8">
@@ -60,13 +60,16 @@ function CategoriesSectionHome({ categories }) {
                             variant="bordered"
                             radius="full"
                             className="
-                            px-8
-                            py-8
+                            px-6
+                            md:px-8
+                            py-6
+                            md:py-8
                             font-medium
                             border-[3px]
                             border-[#461E5C]
                             text-[#461E5C]
-                            text-2xl
+                            text-base
+                            lg:text-xl
                             leading-9
                             tracking-wide
                             "
