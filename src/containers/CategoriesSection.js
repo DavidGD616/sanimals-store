@@ -40,13 +40,13 @@ function CategoriesSectionHome({ categories }) {
                 <div className="my-12 md:my-48 grid grid-cols-2 gap-4 md:mt-10 md:grid-cols-3 lg:gap-8">
                     {/* Show just 5 categories in total. */}
                     {categories.slice(0, 5).map((categorie, index) => (
-                        <Card radius="sm" key={index} shadow="none" isPressable className="bg-[#FEEFFF] p-8">
+                        <Card radius="sm" key={index} shadow="none" isPressable className="bg-[#FEEFFF] p-2">
                             <CardHeader>
-                                <h2 className="text-2xl text-gray-800 font-bold">{categorie.name}</h2>
+                                <h2 className="text-xl md:text-2xl text-gray-800 font-bold">{categorie.name}</h2>
                             </CardHeader>
                             <CardBody>
                                 <Image
-                                className="mt-8 flex items-center justify-center md:mt-24"
+                                className="mt-4 flex items-center justify-center md:mt-24"
                                 alt={categorie.title}
                                 src={categorie.image}
                                 />

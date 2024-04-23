@@ -15,7 +15,7 @@ function CartModal({ product }) {
     // Get the last item added to the cart
     const lastItem = cartItems[cartItems.length - 1];
 
-    const handleCartModal = (product) => {
+    const handleCartModal = () => {
         addToCart(product);
         onOpen();
     } 
