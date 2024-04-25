@@ -9,6 +9,7 @@ import { Categories } from './pages/Categories';
 import { Cart } from './pages/Cart';
 import { Announcement } from './components/Announcement';
 import { NavBarSection } from './containers/NavBarSection';
+import { Footer } from './containers/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path='/cart' element={<Cart />} />
           </Routes>
         </BrowserRouter>
+    <Footer/>
     </>
   );
 }

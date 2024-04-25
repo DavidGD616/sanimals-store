@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchProductById } from '../api/fakeStoreAPI';
 import { PageWidth } from '../components/PageWidth';
-import { Footer } from '../containers/Footer';
 import { ProductSection } from '../containers/ProductSection';
 
 function ProductPage() {
@@ -31,7 +30,6 @@ function ProductPage() {
         <PageWidth>
             <ProductSection product={product} />
         </PageWidth>
-        <Footer />
         </>
     )
 }

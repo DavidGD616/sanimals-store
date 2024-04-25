@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartProvider";
 import { PageWidth } from '../components/PageWidth';
-import { Footer } from "../containers/Footer";
 import { Button, Divider, Link } from "@nextui-org/react";
 import { Reducer } from "../svg/Reducer";
 import { Increaser } from "../svg/Increaser";
@@ -139,7 +138,6 @@ function Cart() {
                     </div>
                 </section>
             </PageWidth>
-            <Footer />
         </>
     )
 }

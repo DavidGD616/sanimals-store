@@ -2,7 +2,6 @@ import React, { useState, useEffect} from 'react';
 import { fetchCategories } from '../api/fakeStoreAPI';
 import { Banner } from '../containers/Banner';
 import { CategoriesSectionHome } from '../containers/CategoriesSection';
-import { Footer } from '../containers/Footer';
 
 function Home() {
     const [ categories, setCategories ] = useState([]);
@@ -28,7 +27,6 @@ function Home() {
         <>
         <Banner />
             <CategoriesSectionHome categories={categories} />
-        <Footer />
         </>
     )
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchProducts } from '../api/fakeStoreAPI';
 import { PageWidth } from '../components/PageWidth';
-import { Footer } from '../containers/Footer';
 import { ProductsSection } from '../containers/ProductsSection';
 import { Pagination } from '@nextui-org/react';
 import { SkeletonProduct } from '../components/Skeletons';
@@ -71,7 +70,6 @@ function Products() {
                     
                 )}
             </PageWidth>
-        <Footer />
         </>
       );
 }
