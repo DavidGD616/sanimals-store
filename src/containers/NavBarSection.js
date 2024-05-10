@@ -45,7 +45,7 @@ function NavBarSection() {
             <NavbarContent className="hidden sm:flex gap-8" justify="center">
                 <NavbarItem>
                     <Link 
-                    href="#"
+                    href="/products"
                     color="foreground"
                     className="text-xl font-medium"
                     >
@@ -53,7 +53,9 @@ function NavBarSection() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground"
+                    <Link
+                    href="/categories"
+                    color="foreground"
                     className="text-xl font-medium"
                     >
                         Categories
@@ -66,16 +68,21 @@ function NavBarSection() {
                     <Search className="h-8 w-auto"/>
                 </NavbarItem>
                 <NavbarItem>
-                    <Badge color='danger' content={getTotalQuantity()} shape="rectangle">
-                        <CartIcon size={30} />
-                    </Badge>
+                    <Link
+                    href="/cart"
+                    className="text-black"
+                    >
+                        <Badge color='danger' content={getTotalQuantity()} shape="rectangle">
+                            <CartIcon size={30} />
+                        </Badge>
+                    </Link>
                 </NavbarItem>
             </NavbarContent>
 
             <NavbarMenu className="pt-20 gap-6">
                 <NavbarMenuItem>
                     <Link
-                    href="#"
+                    href="/products"
                     color="foreground"
                     className="w-full text-xl font-medium"
                     size="lg"
@@ -85,7 +92,7 @@ function NavBarSection() {
                 </NavbarMenuItem>
                 <NavbarMenuItem>
                     <Link 
-                    href="#"
+                    href="/categories"
                     color="foreground"
                     className="w-full text-xl font-medium"
                     size="lg"

@@ -12,18 +12,22 @@ function CategoriesSection({ categories }) {
             </h1>
             <div className="my-32 grid grid-cols-1 gap-6 md:mt-10 md:grid-cols-3 lg:gap-8">
                 {categories.map((categorie, index) => (
-                    <Card radius="sm" key={index} shadow="none" isPressable className="bg-[#FEEFFF] p-8">
-                        <CardHeader>
-                            <h2 className="text-2xl text-gray-800 font-bold">{categorie.name}</h2>
-                        </CardHeader>
-                        <CardBody>
-                            <Image
-                            className="mt-8 flex items-center justify-center md:mt-24"
-                            alt={categorie.title}
-                            src={categorie.image}
-                            />
-                        </CardBody>
-                    </Card>
+                    <>
+                    <Link to={`/categories/${categorie.id}`}>
+                        <Card radius="sm" key={index} shadow="none" isPressable className="bg-[#FEEFFF] p-8">
+                            <CardHeader>
+                                <h2 className="text-2xl text-gray-800 font-bold">{categorie.name}</h2>
+                            </CardHeader>
+                            <CardBody>
+                                <Image
+                                className="mt-8 flex items-center justify-center md:mt-24"
+                                alt={categorie.title}
+                                src={categorie.image}
+                                />
+                            </CardBody>
+                        </Card>
+                    </Link>
+                    </>
                 ))}
             </div>
         </section>
@@ -40,6 +44,8 @@ function CategoriesSectionHome({ categories }) {
                 <div className="my-12 md:my-48 grid grid-cols-2 gap-4 md:mt-10 md:grid-cols-3 lg:gap-8">
                     {/* Show just 5 categories in total. */}
                     {categories.slice(0, 5).map((categorie, index) => (
+                        <>
+                        <Link to={`/categories/${categorie.id}`}>
                         <Card radius="sm" key={index} shadow="none" isPressable className="bg-[#FEEFFF] p-2">
                             <CardHeader>
                                 <h2 className="text-xl md:text-2xl text-gray-800 font-bold">{categorie.name}</h2>
@@ -52,6 +58,8 @@ function CategoriesSectionHome({ categories }) {
                                 />
                             </CardBody>
                         </Card>
+                        </Link>
+                        </>
                     ))}
                     <div className="flex justify-center items-center">
                         <Button

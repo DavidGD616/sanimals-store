@@ -30,12 +30,24 @@ export const fetchProductById = async (id) => {
   }
 }
 
+// Categories
 export const fetchCategories = async () => {
   try {
     const response = await axios.get(`${BASE_URL}/categories`);
     return response.data;
   } catch (error) {
     console.error('Error fetching categories:', error);
+    throw error;
+  }
+}
+
+// Get all products by category
+export const fetchProductsByCategory = async (categoryId) => {
+  try {
+    const response = await axios.get(`${BASE_URL}/categories/${categoryId}/products`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching produts for this categoryID ${categoryId}: ${categoryId}`, error);
     throw error;
   }
 }

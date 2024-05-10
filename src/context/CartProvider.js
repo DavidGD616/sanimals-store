@@ -65,12 +65,10 @@ function CartProvider({ children }) {
     }
 
     useEffect(() => {
-        console.log("Updating local storage with cartItems:", cartItems);
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
     }, [cartItems]);
 
     useEffect(() => {
-        console.log("Retrieving cartItems from local storage");
         const cartItems = localStorage.getItem("cartItems");
         if (cartItems) {
             setCartItems(JSON.parse(cartItems));
