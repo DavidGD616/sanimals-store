@@ -20,7 +20,7 @@ function ProductsByCategory() {
         }
 
         fetchData();
-    }, []);
+    }, [categoryId]);
 
     const skeletonArray = new Array(8).fill(<SkeletonProduct />);
 
